@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <navbar class="navbar">
+        <nav>
+            <img src="logos/logo pharmacy.jpg">
+            <p>BMI calculator</p>
+            <img src="logos/logo pharma.jpg">
+        </nav>
+    </navbar>
+
+    <section>
+        <div class="form">
+            <h2>Calculate Your BMI</h2>
+            <label for="height">Height</label>
+            <input class="height" type="number" name="Height" placeholder="Your Height In cm">
+            <label for="weight">Weight</label>
+            <input class="weight" type="number" name="Weight" placeholder="Your Weight In Kg">
+            <label for="age">Age</label>
+            <input class="age" type="number" name="Age" placeholder="Your Age">
+        </div>
+
+        <button class="calc">
+            Calculate
+        </button>
+    </section>
+
+    <section class="result">
+        <div class="score"></div>
+        <div class="status"></div>
+    </section>
+
+    <div class="block">Use Smart Phone</div>
+    <script src="script.js"></script>
+</body>
+</html>

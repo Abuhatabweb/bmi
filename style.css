@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: block;
+    width: 100%;
+    height: 14vh;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+nav{
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img {
+    width: 20%;
+    /* 20px 22px */
+}
+nav img:nth-last-child(1) {
+    width: 24.5%;
+}
+
+nav p {
+    transform: translateX(7px);
+    font-family: cairo;
+    font-weight: bolder;
+    font-size: 150%;
+    /* scale 2 */
+}
+
+section{
+    margin: 40px 20px 10px 20px;
+}
+
+.form{
+    font-family: cairo;
+    padding: 30px;
+    border-radius: 7px;
+    background-color: rgba(162, 199, 253, 0.815);
+    display: flex;
+    flex-direction: column;
+}
+
+label + input {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+input{
+    border: none;
+    border-radius: 7px;
+    height: 50px;
+    padding: 10px;
+}
+
+.calc{
+    font-family: cairo;
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 40px;
+    background-color: rgba(117, 247, 84, 0.87);
+}
+
+
+.result{
+    font-family: cairo;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.score{
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    background-color: #a6e1fc80;
+    border: green 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 27px;
+}
+.score span{
+    transform: translateX(50%);
+}
+
+.status{
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    background-color: #a6e1fc80;
+    border: green 2px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 35px;
+}
+
+.block{
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+    .block{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        background-color: black;
+        color: white;
+        width: 100%;
+        height: 150%;
+    }
+}
