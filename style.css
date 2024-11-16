@@ -24,6 +24,7 @@ nav img {
 }
 nav img:nth-last-child(1) {
     width: 24.5%;
+    transform: translateY(-4px);
 }
 
 nav p {
